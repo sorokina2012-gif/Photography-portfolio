@@ -1,0 +1,224 @@
+Ludmila, [11.11.2025 11:41]
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фотограф Людмила Сорокина</title>
+<style>
+  body { margin:0; font-family:'Lato',sans-serif; background:#fff; color:#222; line-height:1.6; }
+  a { text-decoration:none; color:#FF7F50; }
+  header { position:relative; text-align:center; color:#fff; }
+  header img { width:100%; height:80vh; object-fit:cover; filter: brightness(0.6); }
+  header .hero-text { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+  header h1 { font-family:'Montserrat',sans-serif; font-size:40px; font-weight:700; margin:0; }
+  header p { font-size:18px; margin:10px 0 20px; }
+  header .btn { background:#FF7F50; color:#fff; padding:12px 25px; font-weight:600; border:none; cursor:pointer; border-radius:5px; transition:0.3s; }
+  header .btn:hover { background:#e96b3a; }
+  section { padding:60px 20px; max-width:1200px; margin:0 auto; opacity:0; transform:translateY(30px); transition:all 0.8s ease-out; }
+  section.visible { opacity:1; transform:translateY(0); }
+  h2 { font-family:'Montserrat',sans-serif; font-size:32px; font-weight:600; margin-bottom:20px; text-align:center; }
+  .about, .services, .portfolio, .contacts { text-align:center; }
+  .about img { width:200px; height:200px; object-fit:cover; border-radius:50%; margin-bottom:20px; }
+  .services .card { display:inline-block; width:280px; margin:10px; padding:20px; border:1px solid #E0E0E0; border-radius:8px; vertical-align:top; transition: transform 0.3s, box-shadow 0.3s; }
+  .services .card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+  .services .card h3 { font-size:20px; font-weight:600; margin-bottom:10px; }
+  .portfolio-section { margin-top:40px; }
+  .filter-btn { background:#fff; border:1px solid #FF7F50; color:#FF7F50; padding:8px 15px; margin:5px; cursor:pointer; border-radius:5px; transition:0.3s; }
+  .filter-btn.active, .filter-btn:hover { background:#FF7F50; color:#fff; }
+  .portfolio { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
+  .portfolio img { width:280px; border-radius:5px; cursor:pointer; transition: transform 0.3s; }
+  .portfolio img:hover { transform:scale(1.05); }
+  .modal { display:none; position:fixed; z-index:1000; padding-top:60px; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); }
+  .modal-content { margin:auto; display:block; max-width:90%; max-height:80vh; border-radius:8px; }
+  .close { position:absolute; top:20px; right:35px; color:#fff; font-size:40px; font-weight:bold; cursor:pointer; }
+  form { max-width:500px; margin:0 auto; text-align:left; }
+  form input, form textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #E0E0E0; border-radius:5px; font-size:16px; }
+  form button { background:#FF7F50; color:#fff; padding:12px 25px; font-weight:600; border:none; cursor:pointer; border-radius:5px
+
+Ludmila, [11.11.2025 12:25]
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фотограф Людмила Сорокина</title>
+<style>
+body { margin:0; font-family:'Lato',sans-serif; background:#fff; color:#222; line-height:1.6; }
+a { text-decoration:none; color:#FF7F50; }
+header { position:relative; text-align:center; color:#fff; }
+header img { width:100%; height:80vh; object-fit:cover; filter: brightness(0.6); }
+header .hero-text { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+header h1 { font-family:'Montserrat',sans-serif; font-size:40px; font-weight:700; margin:0; }
+header p { font-size:18px; margin:10px 0 20px; }
+header .btn { background:#FF7F50; color:#fff; padding:12px 25px; font-weight:600; border:none; cursor:pointer; border-radius:5px; transition:0.3s; }
+header .btn:hover { background:#e96b3a; }
+section { padding:60px 20px; max-width:1200px; margin:0 auto; opacity:0; transform:translateY(30px); transition:all 0.8s ease-out; }
+section.visible { opacity:1; transform:translateY(0); }
+h2 { font-family:'Montserrat',sans-serif; font-size:32px; font-weight:600; margin-bottom:20px; text-align:center; }
+.about, .services, .portfolio, .contacts { text-align:center; }
+.about img { width:200px; height:200px; object-fit:cover; border-radius:50%; margin-bottom:20px; }
+.services .card { display:inline-block; width:280px; margin:10px; padding:20px; border:1px solid #E0E0E0; border-radius:8px; vertical-align:top; transition: transform 0.3s, box-shadow 0.3s; }
+.services .card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+.services .card h3 { font-size:20px; font-weight:600; margin-bottom:10px; }
+.filter-btn { background:#fff; border:1px solid #FF7F50; color:#FF7F50; padding:8px 15px; margin:5px; cursor:pointer; border-radius:5px; transition:0.3s; }
+.filter-btn.active, .filter-btn:hover { background:#FF7F50; color:#fff; }
+.portfolio { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
+.portfolio img { width:280px; border-radius:5px; cursor:pointer; transition: transform 0.3s; }
+.portfolio img:hover { transform:scale(1.05); }
+.modal { display:none; position:fixed; z-index:1000; padding-top:60px; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); }
+.modal-content { margin:auto; display:block; max-width:90%; max-height:80vh; border-radius:8px; }
+.close { position:absolute; top:20px; right:35px; color:#fff; font-size:40px; font-weight:bold; cursor:pointer; }
+form { max-width:500px; margin:0 auto; text-align:left; }
+form input, form textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #E0E0E0; border-radius:5px; font-size:16px; }
+form button { background:#FF7F50; color:#fff; padding:12px 25px; font-weight:600; border:none; cursor:pointer; border-radius:5px; transition:0.3s; }
+form button:hover { background:#e96b3a; }
+footer { background:#F9F9F9; padding:20px; text-align:center; font-size:14px; border-top:1px solid #E0E0E0; }
+footer a { margin:0 10px; font-size:18px; }
+.contact-buttons { margin:20px 0; text-align:center; }
+.contact-buttons a { display:inline-block; color:#fff; padding:12px 20px; border-radius:5px; margin:5px; font-weight:600; transition:0.3s; }
+.contact-buttons a.phone { background:#FF7F50; }
+.contact-buttons a.whatsapp { background:#25D366; }
+.contact-buttons a.telegram { background:#0088cc; }
+.contact-buttons a:hover { opacity:0.9; }
+@media(max-width:768px){ .services .card, .portfolio img { width:90%; } }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/hero.jpg" alt="Hero Image">
+  <div class="hero-text">
+    <h1>Фотограф Людмила Сорокина</h1>
+    <p>Репортаж, Семья, Коммерческая съёмка | Королёв, Москва</p>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Записаться на съёмку</button>
+  </div>
+</header>
+
+Ludmila, [11.11.2025 12:25]
+<section class="about">
+  <h2>Обо мне</h2>
+  <img src="images/portrait.jpg" alt="Людмила Сорокина">
+  <p>Меня зовут Людмила Сорокина. Более 10 лет снимаю важные моменты: выписки, семейные прогулки, корпоративы и коммерческие проекты. Люблю живые кадры, свет и настоящие эмоции.</p>
+</section>
+
+<section class="services">
+  <h2>Услуги</h2>
+  <div class="card">
+    <h3>Семейная и детская фотосъёмка</h3>
+    <p>Прогулки, выписки, праздники. Живые эмоции, тёплые кадры.</p>
+  </div>
+  <div class="card">
+    <h3>Репортажные съёмки</h3>
+    <p>Мероприятия, корпоративы, события любого масштаба.</p>
+  </div>
+  <div class="card">
+    <h3>Коммерческая / студийная съёмка</h3>
+    <p>Каталоги, маркетплейсы, портреты для бизнеса.</p>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <h2>Портфолио</h2>
+  <div style="text-align:center; margin-bottom:20px;">
+    <button class="filter-btn active" onclick="filterSelection('all', this)">Все</button>
+    <button class="filter-btn" onclick="filterSelection('family', this)">Семья</button>
+    <button class="filter-btn" onclick="filterSelection('events', this)">Выписки/События</button>
+    <button class="filter-btn" onclick="filterSelection('commercial', this)">Коммерческая</button>
+  </div>
+  <div class="portfolio">
+    <!-- Семья -->
+    <img class="filterDiv family" src="images/family1.jpg" onclick="openModal(this)">
+    <img class="filterDiv family" src="images/family2.jpg" onclick="openModal(this)">
+    <img class="filterDiv family" src="images/family3.jpg" onclick="openModal(this)">
+    <img class="filterDiv family" src="images/family4.jpg" onclick="openModal(this)">
+    <img class="filterDiv family" src="images/family5.jpg" onclick="openModal(this)">
+    <img class="filterDiv family" src="images/family6.jpg" onclick="openModal(this)">
+    <img class="filterDiv family" src="images/family7.jpg" onclick="openModal(this)">
+
+    <!-- Выписки / События -->
+    <img class="filterDiv events" src="images/events1.jpg" onclick="openModal(this)">
+    <img class="filterDiv events" src="images/events2.jpg" onclick="openModal(this)">
+    <img class="filterDiv events" src="images/events3.jpg" onclick="openModal(this)">
+    <img class="filterDiv events" src="images/events4.jpg" onclick="openModal(this)">
+    <img class="filterDiv events" src="images/events5.jpg" onclick="openModal(this)">
+    <img class="filterDiv events" src="images/events6.jpg" onclick="openModal(this)">
+    <img class="filterDiv events" src="images/events7.jpg" onclick="openModal(this)">
+
+    <!-- Коммерческая / прочие -->
+    <img class="filterDiv commercial" src="images/commercial1.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial2.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial3.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial4.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial5.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial6.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial7.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial8.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial9.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial10.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial11.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial12.jpg" onclick="openModal(this)">
+    <img class="filterDiv commercial" src="images/commercial13.jpg" onclick="openModal(this)">
+  </div>
+</section>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+Ludmila, [11.11.2025 12:25]
+<section class="contacts" id="contact">
+  <h2>Контакты</h2>
+  <div class="contact-buttons">
+    <a href="tel:+79257091083" class="phone">Позвонить</a>
+    <a href="https://wa.me/79257091083" target="_blank" class="whatsapp">WhatsApp</a>
+    <a href="https://t.me/Ludmila_Sorokina" target="_blank" class="telegram">Telegram</a>
+  </div>
+  <form>
+    <input type="text" placeholder="Имя" required>
+    <input type="tel" placeholder="Телефон" value="+79257091083" required>
+    <textarea placeholder="Сообщение" rows="5" required></textarea>
+    <button type="submit">Записаться на съёмку</button>
+  </form>
+</section>
+
+<footer>
+  <p>Фотограф Людмила Сорокина — 10 лет опыта | Королёв / Москва</p>
+  <div>
+    <a href="#" target="_blank">Instagram</a>
+    <a href="#" target="_blank">VK</a>
+    <a href="#" target="_blank">Telegram</a>
+  </div>
+</footer>
+
+<script>
+function reveal(){
+  var sections=document.querySelectorAll("section");
+  for(var i=0;i<sections.length;i++){
+    var windowHeight=window.innerHeight;
+    var elementTop=sections[i].getBoundingClientRect().top;
+    if(elementTop<windowHeight-100){ sections[i].classList.add("visible"); }
+  }
+}
+window.addEventListener("scroll",reveal);
+window.addEventListener("load",reveal);
+
+function filterSelection(category,btn){
+  var x=document.getElementsByClassName("filterDiv");
+  if(category=="all") category="";
+  for(var i=0;i<x.length;i++){ x[i].style.display="none"; if(x[i].className.indexOf(category)>-1) x[i].style.display="block";}
+  var btns=document.getElementsByClassName("filter-btn");
+  for(i=0;i<btns.length;i++){ btns[i].className=btns[i].className.replace(" active",""); }
+  btn.className+=" active";
+}
+
+function openModal(img){
+  document.getElementById("myModal").style.display="block";
+  document.getElementById("modalImg").src=img.src;
+}
+function closeModal(){ document.getElementById("myModal").style.display="none"; }
+</script>
+
+</body>
+</html>
